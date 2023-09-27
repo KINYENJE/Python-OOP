@@ -51,3 +51,17 @@ def get_biggest_number(*args):
 
 print("The oldest dog is {} years old.".format(get_biggest_number(bosco.age, philo.age, mikey.age)))
 
+
+
+# modify attributes
+class Email:
+    def __init__(self):
+        self.is_sent = False
+
+    def send_email(self):
+        self.is_sent = True
+
+my_email = Email()
+print(my_email.is_sent)  # False
+my_email.send_email()
+print(my_email.is_sent)  # True
